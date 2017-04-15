@@ -9,6 +9,7 @@ module.exports = function(config) {
     files: [
       //'https://code.jquery.com/jquery-2.1.4.js',
       'assets/js/jquery-2.1.1.min.js',
+      'assets/js/fizz_buzz.js',
       'assets/js/**/*.js',
       'spec/**/*_spec.js', {
         pattern: 'spec/fixtures/**/*.html',
