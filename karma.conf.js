@@ -9,10 +9,10 @@ module.exports = function(config) {
     files: [
       //'https://code.jquery.com/jquery-2.1.4.js',
       'assets/js/jquery-2.1.1.min.js',
-      'asset/js/jasmine-2.5.2/jasmine-html.js',
-      'asset/js/jasmine-2.5.2/jasmine.js',
-      'asset/js/jasmine-jquery.js',
-      'asset/js/jasmine-2.5.2/boot.js',
+      'assets/js/jasmine-2.5.2/jasmine-html.js',
+      'assets/js/jasmine-2.5.2/jasmine.js',
+      'assets/js/jasmine-jquery.js',
+      'assets/js/jasmine-2.5.2/boot.js',
       'assets/js/fizz_buzz.js',
       'assets/js/**/*.js',
       'spec/**/*_spec.js', {
@@ -91,8 +91,8 @@ module.exports = function(config) {
         flags: ['--no-sandbox']
       }
     }
-  })
+  });
   if (process.env.TRAVIS) {
     config.browsers = ['chromeTravisCI'];
   }
-}
+};

@@ -1,7 +1,7 @@
 describe('Fizz Buzz', function() {
   beforeEach(function() {
 
-    jasmine.getFixtures().fixturesPath = '.';
+    jasmine.getFixtures().fixturesPath = '/base/spec/fixtures/';
     loadFixtures('index.html');
     $.holdReady(false);
   });
@@ -10,13 +10,12 @@ describe('Fizz Buzz', function() {
     // If you need to reset some values after each testing
     // you can do it here.
   });
-  
-  describe("displays text", function() {
 
+  describe("displays text", function() {
     it("when button is clicked", function() {
-      $('#text').val('Some random text...');
-      $('#click_me').trigger('click');
-      expect($('#display_message').text()).toBe('Some random text...');
+      $('#number').val(45);
+      $('#calculate').trigger('click');
+      expect($('#display_message').text()).toBe('Fizz Buzz');
     });
   });
 });

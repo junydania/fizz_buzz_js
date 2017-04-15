@@ -2,19 +2,19 @@ function fizzBuzz() {}
 
 fizzBuzz.prototype.calculate_fizz = function(number) {
   if (number % 15 === 0) {
-    var result1 = 'Fizz Buzz';
-    return result1;
+    this.result = 'Fizz Buzz';
+    return this.result;
   }
   else if(number % 5 === 0) {
-    var result2 = 'Buzz';
-    return result2;
+    this.result = 'Buzz';
+    return this.result;
   }
   else if(number % 3 === 0){
-    var result3 = 'Fizz';
-    return result3;
+    this.result = 'Fizz';
+    return this.result;
   }else {
-    var errorMessage =  "Number entered doesn't meet any of the criteria";
-    return errorMessage;
+    this.result =  "Number entered doesn't meet any of the criteria";
+    return this.result;
   }
 
 };

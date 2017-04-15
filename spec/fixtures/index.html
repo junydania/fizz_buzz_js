@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <title>Fizz Buzz Game</title>
 
+    <script type="text/javascript" src="../../assets/js/fizz_buzz.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
+    
     <script type="text/javascript">
 
+          $(document).ready(function() {
+            $('#calculate').click(function() {
+              var number = parseInt($('#number').val());
+              var fizzGame = new fizzBuzz();
+              fizzGame.calculate_fizz(number);
+              $('#display_message').html(fizzGame.result);
+          });
+        });
 
     </script>
 
@@ -20,7 +29,7 @@
     </div>
 
     <div>
-        <button id="submit">Check Number</button>
+        <button id="calculate">Submit</button>
 
     </div>
 
