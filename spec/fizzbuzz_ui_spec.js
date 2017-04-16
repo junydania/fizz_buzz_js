@@ -1,10 +1,18 @@
 describe('Fizz Buzz', function() {
   beforeEach(function() {
 
-    jasmine.getFixtures().fixturesPath = '/base/spec/fixtures/';
-    loadFixtures('index.html');
+    // jasmine.getFixtures().fixturesPath = "base/spec/fixtures/";
+    // loadFixtures('index.html');
+    // $.holdReady(false);
+
+    jasmine.getFixtures().clearCache();
+    var f = jasmine.getFixtures();
+    f.fixturesPath = 'base/spec/fixtures';
+    f.load('index.html');
     $.holdReady(false);
+
   });
+
 
   afterEach(function() {
     // If you need to reset some values after each testing
