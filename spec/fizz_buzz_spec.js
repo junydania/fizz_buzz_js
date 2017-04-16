@@ -17,4 +17,7 @@ describe("Fizz_buzz", function() {
     expect(subject.calculate_fizz(6)).toEqual('Fizz');
   });
 
+  it("Tests that number doesn't meet any of the criteria", function() {
+    expect(subject.calculate_fizz(1013)).toEqual("Sorry! Try Again!!");
+  });
 });
