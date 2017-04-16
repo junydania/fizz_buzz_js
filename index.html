@@ -19,13 +19,16 @@
     <script type="text/javascript">
 
           $(document).ready(function() {
+            $("input").focus(function() {
+              $('#randomnumber').html("Enter a random number, if you get Fizz Buzz, that's $10,000 jackpot").fadeOut(3000);
+            });
             $('#calculate').click(function() {
               var number = parseInt($('#number').val());
               var fizzGame = new fizzBuzz();
               fizzGame.calculate_fizz(number);
-              $('#display_message').html(fizzGame.result);
+              $('#display_message').html(fizzGame.result).addClass('result');
           });
-        });
+          });
     </script>
 
     <div class="container-fluid">
@@ -38,8 +41,9 @@
 
     <div class="container-fluid" >
       <div class="row" id="gamebox">
-        <div class="col-md-2" id="numberbox">
+        <div class="col-md-12 col-lg-12" id="numberbox">
             <input type="text" id="number" placeholder="Enter a Number" />
+            <p id="randomnumber"><span></span></p>
             <br />
             <button class="btn btn-success" id="calculate">Hit Me</button>
         </div> <!-- col-md-12 -->
@@ -49,12 +53,12 @@
     </div> <!-- container-fluid -->
 
 
-
-
-    <div>
-      <span id="display_value"></span>
-      <span id="display_message"></span>
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+              <span id="display_message"></span>
+        </div>
+      </div>
     </div>
 
 

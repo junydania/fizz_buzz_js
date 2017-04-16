@@ -11,11 +11,12 @@
     text-decoration-style: solid;
     font-size: 40px;
     font-weight: bold;
+    color: white;
     border-radius: 20px solid;
-    margin-top: 50px;
-    background-color: green;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 40px;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
     /*top: 10px;*/
 }
 
@@ -41,4 +42,15 @@
     height: 50px;
     margin-top: 5px;
     font-size: 25px
+}
+
+.result {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#randomnumber {
+  margin-left: 70px;
+  font-size: 20px
+
 }
