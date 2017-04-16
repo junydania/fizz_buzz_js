@@ -27,6 +27,9 @@
               var fizzGame = new fizzBuzz();
               fizzGame.calculate_fizz(number);
               $('#display_message').html(fizzGame.result).addClass('result');
+              // if('#display_message').text('Fizz Buzz'){
+              //   $('#cashdisplay').prepend('<img id="cashdisplay" src="assets/images/games.jpg" />')
+              // }
           });
           });
     </script>
@@ -52,11 +55,16 @@
 
     </div> <!-- container-fluid -->
 
+    <br />
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
               <span id="display_message"></span>
+        </div>
+
+        <div class="col-md-12" id="cashdisplay">
+
         </div>
       </div>
     </div>

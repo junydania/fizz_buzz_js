@@ -15,9 +15,9 @@
     border-radius: 20px solid;
     margin-top: 40px;
     background-color: black;
-    padding-left: 15px;
-    padding-right: 15px;
-    /*top: 10px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
 }
 
 #number {
@@ -34,6 +34,7 @@
     background-color: red;
     padding-top: 20px;
     padding-bottom: 70px;
+
 }
 
 
@@ -47,6 +48,14 @@
 .result {
   font-size: 30px;
   font-weight: bold;
+  border-style: solid;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+  height: 10px;
 }
 
 #randomnumber {
