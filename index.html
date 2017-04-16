@@ -4,27 +4,8 @@
     <meta charset="utf-8">
     <title>Fizz Buzz Game</title>
 
-    <script type="text/javascript" src="../../assets/js/fizz_buzz.js"></script>
-    <script type="text/javascript" src="../../assets/js/jasmine-2.5.2/jasmine.js"></script>
-    <script type="text/javascript" src="../../assets/js/jasmine-2.5.2/jasmine-html.js"></script>
+    <script type="text/javascript" src="assets/js/fizz_buzz.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script type="text/javascript" src="../../assets/js/jasmine-2.5.2/boot.js"></script>
-    <script type="text/javascript" src="../../assets/js/jasmine-2.5.2/jasmine-jquery.js"></script>
-
-
-    <script type="text/javascript">
-
-          $(document).ready(function() {
-            $('#calculate').click(function() {
-              var number = parseInt($('#number').val());
-              var fizzGame = new fizzBuzz();
-              fizzGame.calculate_fizz(number);
-              $('#display_message').html(fizzGame.result);
-          });
-        });
-
-    </script>
-
   </head>
 
   <body>
@@ -45,5 +26,18 @@
       <span id="display_message"></span>
 
     </div>
+
+    <script type="text/javascript">
+
+          $(document).ready(function() {
+            $('#calculate').click(function() {
+              var number = parseInt($('#number').val());
+              var fizzGame = new fizzBuzz();
+              fizzGame.calculate_fizz(number);
+              $('#display_message').html(fizzGame.result);
+          });
+        });
+
+    </script>
   </body>
 </html>
