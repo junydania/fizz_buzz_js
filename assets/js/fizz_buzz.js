@@ -13,8 +13,7 @@ fizzBuzz.prototype.calculate_fizz = function(number) {
     this.result = 'Fizz';
     return this.result;
   }else {
-    this.result =  "Number entered doesn't meet any of the criteria";
+    this.result =  "Sorry! Try Again!!";
     return this.result;
   }
-
 };
