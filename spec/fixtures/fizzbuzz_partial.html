@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<h2> Fizz Buzz Game</h2>
+
+<div>
+  <input type="text" id="number" placeholder="Enter Number" />
+</div>
+
+<div>
+  <button id="calculate">Submit</button>
+</div>
+
+<div>
+  <span id="display_value"></span>
+  <span id="display_message"></span>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('#calculate').click(function() {
+  var number = parseInt($('#number').val());
+  var fizzGame = new fizzBuzz();
+  fizzGame.calculate_fizz(number);
+  $('#display_message').html(fizzGame.result);
+    });
+  });
+</script>

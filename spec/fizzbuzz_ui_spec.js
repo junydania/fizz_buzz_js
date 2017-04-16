@@ -8,7 +8,7 @@ describe('Fizz Buzz', function() {
     jasmine.getFixtures().clearCache();
     var f = jasmine.getFixtures();
     f.fixturesPath = 'base/spec/fixtures';
-    f.load('index.html');
+    f.load('fizzbuzz_partial.html');
     $.holdReady(false);
 
   });
